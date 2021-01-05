@@ -395,11 +395,12 @@ iframe {
     z-index: -1;
     width: 300%;
     height: 100%;
-    background: #27092c;
+    /* background: #27092c;
     background: -webkit-linear-gradient(right, #bd3b69, #7b1a47, #1d0526, #4e113a, #ddafcc, #311449, #483366, #8d759e, #564558, #8c7c94);
     background: -o-linear-gradient(right, #bd3b69, #7b1a47, #1d0526, #4e113a, #ddafcc, #311449, #483366, #8d759e, #564558, #8c7c94);
     background: -moz-linear-gradient(right, #bd3b69, #7b1a47, #1d0526, #4e113a, #ddafcc, #311449, #483366, #8d759e, #564558, #8c7c94);
-    background: linear-gradient(right, #bd3b69, #7b1a47, #1d0526, #4e113a, #ddafcc, #311449, #483366, #8d759e, #564558, #8c7c94);
+    background: linear-gradient(right, #bd3b69, #7b1a47, #1d0526, #4e113a, #ddafcc, #311449, #483366, #8d759e, #564558, #8c7c94); */
+    background-image: url(../images/aftercut.jpg);
     top: 0;
     left: -100%;
     -webkit-transition: all 0.4s;
