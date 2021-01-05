@@ -29,6 +29,13 @@ a {
     background-color: transparent;
 }
 
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
 .nav-container {
     background-color: #222;
     display: flex;
@@ -36,8 +43,7 @@ a {
 
 .nav-container .nav-left {
     display: flex;
-    margin-left: 70px;
-    width: 70%;
+    justify-content: flex-start;
 }
 
 .nav-list {
@@ -46,22 +52,22 @@ a {
 
 .nav-left .nav-item {
     padding-right: 40px;
-    height: 80px;
+    height: 70px;
 }
 
 .nav-link {
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .nav-left .nav-text {
     display: block;
-    font-size: 18px;
+    font-size: 15px;
     color: #999;
     transition: .3s;
 }
 
 .nav-left .nav-link>img {
-    padding-bottom: 13px;
+    transition: .3s;
 }
 
 .nav-left .nav-link>img:hover {
@@ -75,8 +81,6 @@ a {
 .nav-container .nav-right {
     display: flex;
     justify-content: flex-end;
-    width: 30%;
-    margin-right: 70px;
 }
 
 .nav-right .nav-list {
@@ -84,10 +88,15 @@ a {
 }
 
 .nav-right .nav-item {
-    margin-left: 35px;
+    padding-left: 15px;
 }
 
 .nav-right .nav-link i {
-    font-size: 25px;
+    font-size: 15px;
     color: #999;
+    transition: .3s;
+}
+
+.nav-right .nav-link i:hover {
+    color: #44d62c;
 }

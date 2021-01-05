@@ -68,3 +68,9 @@
 .desktop-box .desktop-item .text-1 h2 {
     font-size: 25px;
 }
+
+.desktop-box .desktop-text {
+    margin-right: 165px;
+    margin-left: 165px;
+    width: 56%;
+}
