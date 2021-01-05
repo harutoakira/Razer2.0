@@ -31,7 +31,8 @@ img {
     height: auto;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
     margin: 0;
 }
@@ -89,7 +90,7 @@ a {
     opacity: .7;
 }
 
-.nav-left .nav-item:hover > .nav-link .nav-text {
+.nav-left .nav-item:hover>.nav-link .nav-text {
     color: #fff;
 }
 
@@ -116,6 +117,15 @@ a {
     background: #999;
     padding: 0 25px 0 10px;
     font-size: 16px;
+}
+
+.nav-btn:hover+.hide {
+    display: block;
+    color: #44d62c;
+}
+
+.hide {
+    display: none;
 }
 
 .nav-item .nav-btn {
@@ -147,12 +157,12 @@ a {
     transition: .3s;
 }
 
-.nav-item:hover > .wrapper {
+.nav-item:hover>.wrapper {
     opacity: 1;
     visibility: visible;
 }
 
-li.nav-item:hover > .nav-link .nav-text::before {
+li.nav-item:hover>.nav-link .nav-text::before {
     content: "";
     display: inline-block;
     height: 0;
