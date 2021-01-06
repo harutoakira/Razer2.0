@@ -6,23 +6,40 @@
     display: flex;
     justify-content: center;
 }
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+
 /* Position the image container (needed to position the left and right arrows) */
 
 .products-right {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 90%;
 }
 
+
 /* Inside the ".products-right */
+
 .cols {
     display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 
+
+/* Six columns side by side */
+
 .column {
-    padding: 15px;
+    display: block;
+    flex-grow: 1;
+    float: left;
+    width: 170px;
 }
 
 .products-left {
@@ -32,7 +49,13 @@
     text-align: left;
 }
 
+.products-add-on>img {
+    float: left;
+}
+
+
 /* Inside the ".products-left */
+
 .shape-products-left {
     margin-left: 6%;
 }
@@ -71,12 +94,17 @@
     color: rgb(161, 156, 156);
 }
 
+
 /* Hide the images by default */
 
 .mySlides {
     display: flex;
-    padding: 10px;
-    width: 70%;
+    /* padding: 10px;
+    width: 70%; */
+}
+
+.mySlides>img {
+    height: 100px;
 }
 
 
@@ -149,18 +177,12 @@
 }
 
 
-/* Six columns side by side */
-
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-
 /* Add a transparency effect for thumnbail images */
 
 .demo {
     opacity: 0.6;
+    transition: opacity 300ms;
+    width: 100%;
 }
 
 .active,
@@ -177,4 +199,22 @@
 
 .text-benefit {
     padding: 50px;
+}
+
+
+/* reponsive */
+
+@media (min-width: 1200px) {
+    .mySlides>img {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.cols>img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
 }
