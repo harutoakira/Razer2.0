@@ -110,28 +110,38 @@ a {
 }
 
 .nav-input {
-    width: 310px;
+    width: 40px;
     height: 30px;
     border-radius: 20px;
-    border: 0;
-    background: #999;
-    padding: 0 25px 0 10px;
+    border: 1px solid #999;
+    background-color: transparent;
+    color: #999;
     font-size: 16px;
+    transition: .3s;
+    position: absolute;
+    right: -10px;
+    padding-left: 10px;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.nav-btn:hover+.hide {
-    display: block;
-    color: #44d62c;
-}
-
-.hide {
-    display: none;
+.nav-input.active {
+    opacity: 1;
+    visibility: visible;
+    width: 310px;
+    transition: .3s;
 }
 
 .nav-item .nav-btn {
     position: absolute;
-    top: 31px;
-    right: 3px;
+    top: 24px;
+    right: 0px;
+}
+
+.nav-item .nav-btn i {
+    width: 20px;
+    padding: 7px 0;
+    color: #999;
 }
 
 .nav-right .nav-link i {
