@@ -102,3 +102,15 @@
         margin-right: 155px;
     }
 }
+
+@media screen and (max-width:1920px) {
+    .footer-focus .footer-box {
+        margin-left: 390px;
+    }
+}
+
+@media screen and (max-width:1920px) {
+    .footer-focus .footer-info.info-other {
+        margin-right: 227px;
+    }
+}
