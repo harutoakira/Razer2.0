@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+body,
+html {
+    position: relative;
+}
+
 .main-products {
     display: flex;
     justify-content: center;
+    float: none;
 }
 
 img {
@@ -26,10 +32,15 @@ img {
 
 .cols {
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 20%;
+=======
+    justify-content: flex-start;
+    justify-content: space-around;
+>>>>>>> f169011d808265ae7fb206dc8b743ec83a9c6480
 }
 
 
@@ -201,6 +212,7 @@ img {
     padding: 50px;
 }
 
+<<<<<<< HEAD
 
 /* reponsive */
 
@@ -217,4 +229,54 @@ img {
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
+=======
+.feature {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.text-feature-1 {
+    width: 50%;
+}
+
+.text-feature-1 h1{
+    font-size: 25px;
+    font-weight: 10;
+    color: rgb(68, 224, 68);
+}
+
+.text-feature-2 {
+    width: 50%;
+}
+
+.text-feature-2 h1{
+    font-size: 25px;
+    font-weight: 10;
+    color: rgb(68, 224, 68);
+}
+
+/* responsive */
+
+/* max-width */
+@media only screen and (max-width: 1440px) {
+    .header {
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-products {
+        display: block;
+    }
+
+    .products-right {
+        padding: 50px;
+    }
+
+    .mySlides {
+        padding: 30px;
+    
+    }
+>>>>>>> f169011d808265ae7fb206dc8b743ec83a9c6480
 }
