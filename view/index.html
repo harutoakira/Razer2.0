@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/cf03b6a817.js" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
     <!-- header css -->
     <link rel="stylesheet" href="../css/header.css" type="text/css" />
     <!-- main css -->
@@ -24,13 +25,13 @@
                 <div class="nav-left">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./index.html" class="nav-link">
                                 <img src="https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h5b/h8c/8796147679262/razer.svg" alt="razer" style="width:90px; height:15px;">
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <span class="nav-text">WHAT'S NEW</span>
+                                <span class="nav-text point-1">WHAT'S NEW</span>
                             </a>
                             <div class="wrapper">
                                 <div class="wrapper-child">
@@ -70,7 +71,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <span class="nav-text">PRODUCTS</span>
+                                <span class="nav-text point-2">PRODUCTS</span>
                             </a>
                             <div class="wrapper">
                                 <div class="wrapper-child">
@@ -154,7 +155,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <span class="nav-text">APPS & DOWNLOADS</span>
+                                <span class="nav-text point-3">APPS & DOWNLOADS</span>
                             </a>
                             <div class="wrapper">
                                 <div class="wrapper-child">
@@ -204,7 +205,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <span class="nav-text">EXPLORE</span>
+                                <span class="nav-text point-4">EXPLORE</span>
                             </a>
                             <div class="wrapper">
                                 <div class="wrapper-child">
@@ -269,7 +270,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <span class="nav-text">SUPPORT</span>
+                                <span class="nav-text point-5">SUPPORT</span>
                             </a>
                             <div class="wrapper">
                                 <div class="wrapper-child">
@@ -325,9 +326,9 @@
                 <div class="nav-right">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <div style="padding-top: 22px;">
-                                <button class="nav-btn"><i class="fas fa-search"></i></button>
-                                <input type="search" class="nav-input hide">
+                            <div style="padding-top: 22px; width: 310px;">
+                                <input type="text" class="nav-input" id="txtSearch" placeholder="Search...">
+                                <button class="nav-btn" onClick="menuSearchClick()"><i class="fas fa-search"></i></button>
                             </div>
                         </li>
                         <li class="nav-item">
